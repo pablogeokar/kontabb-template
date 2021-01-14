@@ -1,0 +1,32 @@
+:root{
+    --headerHeight: 60px;
+    --asideWidth: 200px;
+    --footerHeight: 40px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{    
+    height: var(--headerHeight);    
+}
+
+aside{    
+    float: left;
+    width: var(--asideWidth);
+    height: calc(100vh - var(--headerHeight));    
+}
+
+main{
+    width: 100vw;
+    height: calc(100vh - (var(--headerHeight) + var(--footerHeight)));    
+}
+footer{
+    margin-bottom: 0;
+    height: var(--footerHeight);
+    width: 100%;        
+}
