@@ -1,15 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .header {
-    background-color: #edeef1;
+  background-color: #edeef1;
 }
 
 .aside {
-    background-color: #3d5a80;
+  background-color: #3d5a80;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside h2 {
+  color: white;
+  margin-top: 20px;
+  opacity: 0.3;
 }
 
 .main {
-    background-color: #f5f6fa;
+  background-color: #f5f6fa;
 }
 
 .footer {
-    background-color: #e0fbfc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #e0fbfc;
+  color: #3d5a80;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.footer span {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  left: 0;
+  color: white;
+}
+
+.sidebar__text {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+li{
+  list-style: none;
+}
+
+.main-nav {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.main-nav a {
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.6;
+  display: block;
+  padding: 10px 0 20px 20px;
+  border-bottom: 1px dotted gray;
+}
+
+.main-nav a:hover {
+  background: #2c3e50;
+  font-weight: bold;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.main-nav-ul ul {
+  display: none;    
+}
+
+.main-nav-ul li:hover ul {
+  display: block;
+}
+
+.main-nav-ul ul a:before {
+  content: "";
+  margin-left: 20px;
+}
+
+.main-nav .sub-arrow:after {
+  content: "\203A";
+  float: right;
+  margin-right: 20px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+.main-nav li:hover .sub-arrow:after {
+  content: "\2039";
 }

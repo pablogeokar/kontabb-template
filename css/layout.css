@@ -1,32 +1,31 @@
-:root{
-    --headerHeight: 60px;
-    --asideWidth: 200px;
-    --footerHeight: 40px;
+:root {
+  --headerHeight: 60px;
+  --asideWidth: 250px;
+  --footerHeight: 40px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-header{    
-    height: var(--headerHeight);    
+header {
+  height: var(--headerHeight);
 }
 
-aside{    
-    float: left;
-    width: var(--asideWidth);
-    height: calc(100vh - var(--headerHeight));    
+aside {
+  float: left;
+  width: var(--asideWidth);
+  height: calc(100vh - var(--headerHeight));
 }
 
-main{
-    width: 100vw;
-    height: calc(100vh - (var(--headerHeight) + var(--footerHeight)));    
+main {
+  width: 100vw;
+  height: calc(100vh - (var(--headerHeight) + var(--footerHeight)));
 }
-footer{
-    margin-bottom: 0;
-    height: var(--footerHeight);
-    width: 100%;        
+footer {
+  margin-bottom: 0;
+  height: var(--footerHeight);
+  width: calc(100% - var(--asideWidth));
 }
